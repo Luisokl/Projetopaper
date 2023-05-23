@@ -1,0 +1,119 @@
+nav {
+    background-color: red !important;
+}
+
+nav .navbar-brand {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFF;
+}
+nav .navbar-toggler {
+    background-color: #FFF;
+}
+nav .navbar-toggler:focus {
+    box-shadow: none;
+    border: 1px solid #000;
+}
+
+.navbar-collapse.show {
+    height: 400px;
+    margin-top: 15px;
+    /*  realizar melhorias */
+}
+
+/* sessão principal home*/
+
+/*  Carrousel */
+
+.container-slides {
+    position: relative;
+}
+.slide-container .slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+}
+.slide-container .slide .content {
+    flex: 1 1 350px;
+}
+.slide-container .slide .content .btn-details {
+    display: inline-block;
+    background-color: #6A5ACD;
+    color: #FFF;
+    font-size: 1.5rem;
+    padding: 10px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.slide-container .slide .content .btn-details:hover {
+    background-color: #7665e7;
+}
+
+.container-slides .slide-container {
+    display: none;
+}
+.container-slides .active {
+    display: block;
+}
+
+.slide-container:nth-child(1) .slide {
+    background: url(/img/teste/parqueterror.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.slide-container:nth-child(2) .slide {
+    background: url(/img/teste/podcast-filme-super-mario-brosjpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.slide-container:nth-child(3) .slide {
+    background: url(/img/teste/harry-potter-ranking-filmes-capa.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.slide-container:nth-child(4) .slide {
+    background: url(/img/teste/the-walking-dead-11-season.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-slides #back,
+.container-slides #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFF;
+    background-color: #6A5ACD;
+    height: 60px;
+    width: 60px;
+    line-height: 50px;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+.container-slides #back:hover,
+.container-slides #next:hover {
+    background-color: #7665e7;
+}
+
+.container-slides #back {
+    left: 20px;
+}
+.container-slides #next {
+    right: 20px;
+}
