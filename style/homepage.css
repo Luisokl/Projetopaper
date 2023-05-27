@@ -1,5 +1,5 @@
 nav {
-    background-color: red !important;
+    background-color: #000 !important;
 }
 
 nav .navbar-brand {
@@ -22,9 +22,9 @@ nav .navbar-toggler:focus {
     /*  realizar melhorias */
 }
 
-/* sessão principal home*/
+/* sessão principal Main */
 
-/*  Carrousel */
+/* Container-Slide */
 
 .container-slides {
     position: relative;
@@ -40,18 +40,22 @@ nav .navbar-toggler:focus {
 }
 .slide-container .slide .content {
     flex: 1 1 350px;
+    height: 600px;
+    position: relative;
 }
 .slide-container .slide .content .btn-details {
     display: inline-block;
-    background-color: #6A5ACD;
+    background-color: #000;
     color: #FFF;
     font-size: 1.5rem;
     padding: 10px 40px;
     border-radius: 25px;
     text-decoration: none;
+    position: absolute;
+    bottom: 120px;
 }
 .slide-container .slide .content .btn-details:hover {
-    background-color: #7665e7;
+    background-color: #1d1c1c;
 }
 
 .container-slides .slide-container {
@@ -96,19 +100,20 @@ nav .navbar-toggler:focus {
     top: 50%;
     transform: translateY(-50%);
     color: #FFF;
-    background-color: #6A5ACD;
-    height: 60px;
-    width: 60px;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
     line-height: 50px;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     cursor: pointer;
-    font-weight: bolder;
     border-radius: 50px;
+    border: none;
 }
 .container-slides #back:hover,
 .container-slides #next:hover {
-    background-color: #7665e7;
+    transition: .2s ease-in-out;
+    font-size: 5rem;
 }
 
 .container-slides #back {
@@ -117,3 +122,6 @@ nav .navbar-toggler:focus {
 .container-slides #next {
     right: 20px;
 }
+
+/* Carousel-Films */
+
