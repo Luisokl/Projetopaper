@@ -191,7 +191,10 @@ nav .navbar-toggler:focus {
     margin: 0 10px;
     width: 350px;
     height: 250px;
-    z-index: 3;
+    z-index: 1;
+    right: 0;
+    opacity: 0;
+    background-color: blue;
 }
 
 .teste {
