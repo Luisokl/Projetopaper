@@ -132,6 +132,12 @@ nav .navbar-toggler:focus {
     background: #312f2f;
     overflow: hidden;
 }
+
+.carousels-films h3 {
+    color: #FFF;
+    margin-left: 50px;
+}
+
 #container-films {
     position: absolute;
     width: auto;
@@ -154,7 +160,7 @@ nav .navbar-toggler:focus {
 
 #btn-left {
     position: absolute;
-    top: 26%;
+    top: 44%;
     left: 0;
     width: 50px;
     height: 50px;
