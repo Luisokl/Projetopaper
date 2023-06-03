@@ -53,7 +53,7 @@ btnLeft.addEventListener('click', () =>{
 
     var slide = containerFilms.getBoundingClientRect().left;
 
-    if (containerFilms < roundBottomLeft) {
+    if (slide < roundBottomLeft) {
 
         containerFilms.style.transform = 'translateX('+num2+'px)';
 
@@ -69,4 +69,4 @@ btnLeft.addEventListener('click', () =>{
         
         
         
-})
+});
